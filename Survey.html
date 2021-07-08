@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Survey - Melbourne Public Library</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="Styles/default.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.0.0.js"></script>
+    <script src="Scripts/jquery-ui-1.11.4.js"></script>
+    <script src="Scripts/jquery.validate.js"></script>
+    <script src="Scripts/jquery.maskedinput.js"></script>
+    <script src="Scripts/jquery.numeric.js"></script>
+</head>
+<body>
+    <div id="header-wrapper">
+        <div id="header" class="container">
+            <div id="logo">
+                <h1><a href="#">MPL - Melbourne Public Library</a></h1>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="AboutUs.html">  About Us</a></li>
+                    <li><a href="Membership.html"> Membership</a></li>
+                    <li><a href="Survey.html"> Survey</a></li>
+                    <li><a href="ContactUs.html"> Contact Us</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div id="header-featured"></div>
+    <div id="user-info"> </div>
+    <div>
+        <h1 class="">Survey</h1>
+    </div>
+    <div id="wrapper">
+        <div id="featured-wrapper">
+            <div id="featured" class="container">
+                <div id="form-wrapper">
+                    <form id="surveyForm">
+                        <div class="form-element">
+                            <label for="userage">User Age:</label>
+                            <input type="text" id="userage" name="userage" placeholder="Your age. (eg. 20)" />
+                        </div>
+                        <div class="form-element">
+                            <label>Gender:</label><br />
+                            <input type="radio" name="gender" id="male" value="male" checked><label for="male">Male</label> <br />
+                            <input type="radio" name="gender" id="female" value="female"> <label for="female">Female</label>
+                        </div>
+                        <div class="form-element">
+                            <label for="email">Category:</label>
+                            <select id="bookcategory" name="bookcategory">
+                                <option value="default">- Select one category -</option>
+                                <option value="fiction">Fiction</option>
+                                <option value="scifi">Science Fiction</option>
+                                <option value="science">Science</option>
+                                <option value="management">Management</option>
+                                <option value="history">History</option>
+                                <option value="art">Art</option>
+                                <option value="technology">Technology</option>
+                            </select>
+                        </div>
+                        <div class="form-element">
+                            <label for="phone">Rate this site (Rate 0 to 5):</label>
+
+                            <input type="range" id="rating" min="0" max="5" />
+                            <span id="spinval" class="spinval"></span>
+                        </div>
+                        <div class="form-element">
+                            <button type="button" id="cancelButton" class="align-left">Cancel</button>
+                            <button type="button" id="submitButton">Complete</button>
+                        </div>
+                    </form>
+                </div>
+                <div id="answerdata" class="container">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="copyright" class="container">
+        <p>&copy;All rights reserved. | Melbourne Public Library.</p>
+    </div>
+    <script src="Scripts/survey.js"></script>
+    <script src="Scripts/scripts.js"></script>
+
+    
+</body>
+</html>
